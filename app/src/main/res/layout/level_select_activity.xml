@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+        <TextView
+            android:id="@+id/levelSelectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Choose Level" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/levelSelectTable"
+            android:layout_below="@+id/levelSelectText"
+            android:layout_centerHorizontal="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/candyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zigzagcandy_round"
+                    android:layout_margin="10dp"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+
+                <ToggleButton
+                    android:id="@+id/snowButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wavesnow_round"
+                    android:layout_margin="10dp"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+
+                <ToggleButton
+                    android:id="@+id/grassButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zigzaggrass_round"
+                    android:layout_margin="10dp"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ToggleButton
+                    android:id="@+id/desertButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wavedesert_round"
+                    android:layout_margin="10dp"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+
+                <ToggleButton
+                    android:id="@+id/yellowButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zigzagyellow_round"
+                    android:layout_margin="10dp"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+
+                <ToggleButton
+                    android:id="@+id/forestButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/waveforest_round"
+                    android:layout_margin="10dp"
+                    android:textOff="@null"
+                    android:textOn="@null"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/levelDescriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/levelSelectTable"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:text="Level description" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/levelSelectBackButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:text="Go!" />
+
+        <Button
+            android:id="@+id/levelSelectBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:text="Back" />
+
+</RelativeLayout>

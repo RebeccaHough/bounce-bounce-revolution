@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/levelCreationTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Create a Level"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <TextView
+        android:id="@+id/levelCreationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/levelCreationTitleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Create your own level! Save it and launch the forest level to try it."
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/levelCreationParamsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/levelCreationText"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <CheckedTextView
+            android:id="@+id/monstersCheckedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkMark="?android:attr/textCheckMark"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/user_param_one" />
+
+        <CheckedTextView
+            android:id="@+id/movingMonstersCheckedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkMark="?android:attr/textCheckMark"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/user_param_two" />
+
+        <CheckedTextView
+            android:id="@+id/movingPlatformsCheckedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:checkMark="?android:attr/textCheckMark"
+            android:text="@string/user_param_three" />
+
+        <SeekBar
+            android:id="@+id/platformSelectBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:progress="5" />
+
+        <TextView
+            android:id="@+id/platformSelectText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/forest" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/levelCreationSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/levelCreationBackButton"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:text="Save level"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/levelCreationBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

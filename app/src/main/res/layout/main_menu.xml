@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/levelSelectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="67dp"
+            android:background="@android:color/transparent"
+            android:text="Go"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/menuTitleText"
+            android:layout_toStartOf="@+id/menuTitleText"
+            android:layout_marginRight="45dp"
+            android:layout_marginEnd="45dp" />
+
+        <TextView
+            android:id="@+id/menuTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="Main Menu"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/highScoreListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/exitButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="High Scores" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/levelSelectButton"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
+            android:layout_toEndOf="@+id/menuTitleText"
+            android:layout_toRightOf="@+id/menuTitleText"
+            android:background="@android:color/transparent"
+            android:text="Exit" />
+
+    </RelativeLayout>
+</LinearLayout>
